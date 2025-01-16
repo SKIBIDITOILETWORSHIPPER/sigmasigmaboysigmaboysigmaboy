@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Toggle</title>
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="El primo.html">History</a>
+        <a href="gadgets.html">Album</a>
+    </div>
+
+    <button id="toggleBtn" class="toggle-btn">☰ Open Sidebar</button>
+
+    <div class="main-content">
+        <h1>Members of Le Sserafim.</h1>
+        <h2> Sakura Miyawaki</h2>
+        <p>Introduction Date: April 4, 2022
+
+            Background: Born on March 19, 1998, in Kagoshima, Japan, Sakura is a Japanese singer and actress. She was a member of the Japanese idol group HKT48 and gained international fame as a member of the project girl group IZONE from 2018 to 2021. After IZONE's disbandment, she returned to Japan before joining LE SSERAFIM</p>
+        <h2>Kim Garam</h2>
+        <p>Introduction Date: April 5, 2022
+
+            Background: Born on November 16, 2005, in Sangju, South Korea, Garam was introduced as a member of LE SSERAFIM but departed from the group on July 20, 2022, following controversies.</p>
+        <h2>Hong Eunchae </h2>
+        <p>Introduction Date: April 6, 2022
+
+            Background: Born on November 10, 2006, in South Korea, Eunchae is the youngest member (maknae) of LE SSERAFIM. She trained under Source Music before debuting with the group.</p>
+        <h2> Kim Chaewon</h2>
+        <p>Introduction Date: April 7, 2022
+
+            Background: Born on August 1, 2000, in Seoul, South Korea, Chaewon is the leader of LE SSERAFIM. She was previously a member of IZONE alongside Sakura. After IZONE's disbandment, she signed with Source Music and re-debuted with LE SSERAFIM. </p>
+        <h2>Kazuha Nakamura</h2>
+        <p>Introduction Date: April 8, 2022
+
+            Background: Born on August 9, 2003, in Kochi, Japan, Kazuha is a Japanese member of LE SSERAFIM. She trained as a ballerina in the Netherlands before transitioning to K-pop and joining the group.</p>
+        <h2>Huh Yunjin</h2>
+        <p>Introduction Date: April 9, 2022
+
+            Background: Born on October 8, 2001, in Seoul, South Korea, Yunjin moved to the United States at a young age. She participated in the reality show "Produce 48" in 2018 but did not make it to the final lineup of IZ*ONE. She later joined Source Music and debuted with LE SSERAFIM.</p>
+    </div>
+
+    <script>
+        let isSidebarOpen = false;
+
+        document.getElementById("toggleBtn").addEventListener("click", function () {
+            const sidebar = document.getElementById("mySidebar");
+            const mainContent = document.querySelector(".main-content");
+
+            if (isSidebarOpen) {
+                sidebar.style.width = "0";
+                mainContent.style.marginRight = "0";
+                this.textContent = "☰ Open Sidebar";
+            } else {
+                sidebar.style.width = "250px";
+                mainContent.style.marginRight = "250px";
+                this.textContent = "✖ Close Sidebar";
+            }
+
+            isSidebarOpen = !isSidebarOpen;
+        });
+    </script>
+    <br>
+    <br>
+    <img class="neilsleftear" src="fearless-whos-who.webp" alt="">
+</body>
+</html>

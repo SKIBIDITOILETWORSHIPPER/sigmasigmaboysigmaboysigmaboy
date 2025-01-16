@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LE SSERAFIM</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Le Sserafim</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <div class="overlay"></div> 
+
+        <div class="text">
+            <h2 class="sun">Le Sserafim</h2>
+            <h3 class="sun">The best K-Pop group of all time. </h3>
+            <a href="history.html" class="rizz">QUIZZY QUIZ</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.tiktok.com/@celeri_dip459" target="_blank"><img src="tiktok-logo-4504.png" alt="" ></a></li>
+            <li><a href="https://www.instagram.com/sahakyan_justin/" target="_blank"><img src="free-instagram-logo-icon-3497-thumb.png" height="25" width="25"></a></li>
+            <li><a href="#"><img src="elsnapchat-logo-7103.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+                <li><a href="test.html">Members</a></li>
+                <li><a href="El primo.html">History</a></li>
+                <li><a href="gadgets.html">Albums</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

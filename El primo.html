@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <body>
+        <h1>History</h1>
+        <p>Formation and Pre-Debut
+            Name and Meaning: The group’s name, "LE SSERAFIM," is an anagram of "I'M FEARLESS," signifying self-confidence and resilience.
+            Initial Concept: LE SSERAFIM was envisioned as a group that breaks conventional standards in the K-pop industry, emphasizing individuality and boldness.
+            Debut Lineup
+            LE SSERAFIM initially consisted of six members:
+            
+            Kim Chaewon: A former member of IZ*ONE and the group leader.
+            Sakura Miyawaki: A popular Japanese idol and also a former member of IZ*ONE.
+            Huh Yunjin: A Korean-American trainee known from the show "Produce 48."
+            Kazuha Nakamura: A Japanese member with a professional ballet background.
+            Hong Eunchae: The youngest member (maknae) of the group.
+            Kim Garam: Initially part of the lineup but departed shortly after debut due to controversy.
+            Debut and Early Career
+            Debut Album: LE SSERAFIM debuted on May 2, 2022, with their mini-album FEARLESS. The title track, also named "FEARLESS," showcases the group’s bold concept and confident energy.
+            Initial Success: The album gained commercial success, making an impact on various Korean and international music charts.
+            Changes in Lineup
+            Kim Garam’s Departure: Shortly after debut, Kim Garam faced allegations of school bullying, which led to a hiatus and eventual departure from the group. LE SSERAFIM continued as a five-member group.
+            Further Releases and Achievements
+            ANTIFRAGILE (October 17, 2022): Their second mini-album, showcasing themes of growth and resilience. The title track "ANTIFRAGILE" became a massive hit, solidifying their reputation in the K-pop industry.
+            UNFORGIVEN (May 1, 2023): This album incorporated Western and cinematic influences, and its title track, featuring Nile Rodgers, demonstrated the group’s artistic evolution.
+            Notable Achievements
+            LE SSERAFIM became one of the fastest fourth-generation K-pop groups to gain international recognition, frequently topping charts on platforms like Spotify and Billboard.
+            The group is known for their high-energy performances, engaging music videos, and versatile discography.
+            Brand and Influence
+            The members have individually and collectively represented major brands like Louis Vuitton, YSL, and others, reflecting their impact on both music and fashion.
+            Their bold, empowering themes resonate with fans globally, fostering a dedicated fanbase known as FEARNOT.</p>
+    </body>
+    <style>
+        *{
+            font-family: monospace;
+        }
+
+        h1, p{
+            color: black;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: white;
+            transition: 0.3s;
+            padding-top: 60px;
+            background: linear-gradient(to bottom right, blue, red);
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: purple;
+            transition: 1s
+        }
+
+        .toggle-btn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: 1s;
+        }
+
+        .toggle-btn:hover {
+            background-color: purple;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        button{
+            opacity: 0.5;
+        }
+
+        .main-content {
+            transition: margin-right 0.3s;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="test.html">Members</a>
+        <a href="gadgets.html">Album</a>
+    </div>
+
+    <button id="toggleBtn" class="toggle-btn">☰ Open Sidebar</button>
+
+    <script>
+        let isSidebarOpen = false;
+
+        document.getElementById("toggleBtn").addEventListener("click", function () {
+            const sidebar = document.getElementById("mySidebar");
+            const mainContent = document.querySelector(".main-content");
+
+            if (isSidebarOpen) {
+                sidebar.style.width = "0";
+                mainContent.style.marginRight = "0";
+                this.textContent = "☰ Open Sidebar ";
+            } else {
+                sidebar.style.width = "250px";
+                mainContent.style.marginRight = "250px";
+                this.textContent = "✖ Close Sidebar";
+            }
+
+            isSidebarOpen = !isSidebarOpen;
+        });
+    </script>
+
+</body>
+</html>

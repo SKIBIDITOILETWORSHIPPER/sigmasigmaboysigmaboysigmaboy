@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gadgets.css">
+    <title>this shit aint real</title>
+</head>
+<body>
+    <section class="showcase">
+        <a href="index.html" class="sigma">Home</a>
+        <table>
+            <tr>
+                <td>Album Cover</td>
+                <td># of songs</td>
+                <td>Most Popular Song of the Album.</td>
+            </tr>
+            <tr>
+                <td><img src="fearless-800x800.avif" alt="" width="250px" height="250px"></td>
+                <td>5 songs</td>
+                <td>"FEARLESS" is the most popular song.</td>
+            </tr>
+            <tr>
+                <td><img src="antifrafilefr.avif" alt="" width="250px" height="250px"></td>
+                <td>5 songs</td>
+                <td>"ANTIFRAGILE" is the most popular song.</td>
+            </tr>
+            <tr>
+                <td><img src="UNFORGIVEN-800x800.avif" alt="" width="250px" height="250px"></td>
+                <td>13 songs</td>
+                <td>"Blue  Flames" is the most popular song.</td>
+            </tr>
+            <tr>
+                <td><img src="LE-SSERAFIM-1-800x800.avif" alt="" width="250px" height="250px"></td>
+                <td>1 song</td>
+                <td>"Perfect Night" is the most popular song.</td>
+            </tr>
+            <tr>
+                <td><img src="SIGMA MUSIC FR FR.avif" alt="" width="250px" height="250px"></td>
+                <td>1 songs</td>
+                <td>"Perfect Night (Holiday Remix)" is the most popular song.</td>
+            </tr>            
+            <tr>
+                <td><img src="LE-SSERAFIM-800x800.avif" alt="" width="250px" height="250px"></td>
+                <td>5 songs</td>
+                <td>"EASY" is the most popular song.</td>
+            </tr>  
+            <tr>
+                <td><img src="LE-SSERAFIM-5-800x800.avif" alt="" width="250px" height="250px"></td>
+                <td>9 songs</td>
+                <td>"SMART" is the most popular song.</td>
+            </tr>  
+            <tr>
+                <td><img src="LE-SSERAFIM-CRAZY.avif" alt="" width="250px" height="250px"></td>
+                <td>5 songs</td>
+                <td>"CRAZY" is the most popular song.</td>
+            </tr>
+        </table>
+        </header>
+
+        <div class="overlay"></div> 
+        
+    </section>
+
+
+    <div class="menu">
+        <ul>
+                <li><a href="index.html" class="skibidi">Home</a></li>
+                <li><a href="test.html">Members</a></li>
+                <li><a href="El primo.html">History</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
